@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weekly Mood Tracker</h1>
+
+    <!-- Mood Selection and Note -->
+    <div class="mood-section">
+      <label for="mood">Select Mood:</label>
+      <select id="mood">
+        <option value="happy">😊 Happy</option>
+        <option value="sad">😢 Sad</option>
+        <option value="excited">🤩 Excited</option>
+        <option value="stressed">😖 Stressed</option>
+      </select>
+
+      <label for="note">Note:</label>
+      <input type="text" id="note" placeholder="Describe your day...">
+
+      <button onclick="saveMood()">Save Mood</button>
+    </div>
+
+    <!-- Weekly Display -->
+    <h2>Your Week</h2>
+    <div id="week-display" class="week-display"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
